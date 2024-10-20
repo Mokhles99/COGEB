@@ -1,0 +1,51 @@
+.icon-circle { 
+  width: 70px;
+  height: 70px;
+  background-color: rgba(128, 128, 128, 0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Nécessaire pour positionner la bulle */
+  cursor: pointer; /* Affiche un pointeur pour indiquer que l'élément est interactif */
+}
+
+.icon {
+  color: white;
+  font-size: 35px;
+}
+
+/* Style de la bulle (tooltip) */
+.tooltip {
+visibility: hidden;
+width: 200px; /* Ajuste la largeur en fonction du texte */
+background-color: rgb(65, 64, 64);
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px;
+position: absolute;
+z-index: 1;
+top: 50%; /* Position verticale centrée par rapport à l'icône */
+left: -204px; /* Positionne la bulle à gauche de l'icône */
+transform: translateY(-50%); /* Centre la bulle verticalement */
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.tooltip::after {
+content: "";
+position: absolute;
+top: 50%; /* Centre la flèche verticalement */
+right: -5px; /* Positionne la flèche à droite de la bulle */
+transform: translateY(-50%);
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent transparent black; /* Flèche orientée vers la gauche */
+}
+
+/* Lorsque l'icône est survolée, affiche la bulle */
+.icon-circle:hover .tooltip {
+visibility: visible;
+opacity: 1;
+}
