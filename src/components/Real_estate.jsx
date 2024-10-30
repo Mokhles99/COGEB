@@ -14,19 +14,19 @@ const Real_estate = () => {
           style={{ backgroundImage: `url(${images[0]})` }}
         ></div>
         <div className="absolute right-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-6">
-        <a href="https://example.com/sanitaire" target="_blank" rel="noopener noreferrer" className="icon-circle">
+        <a href="https://cogeb-construction.web.app/" target="_blank" rel="noopener noreferrer" className="icon-circle">
         <div className="icon-circle">
             <FaHammer className="icon" />
             <span className="tooltip">Visitez notre filière de vente de matériel de construction</span> 
           </div>
           </a>
-          <a href="https://example.com/sanitaire" target="_blank" rel="noopener noreferrer" className="icon-circle">
+          <a href="https://cogebbois-site.web.app/" target="_blank" rel="noopener noreferrer" className="icon-circle">
           <div className="icon-circle">
             <FaTree className="icon" />
             <span className="tooltip">Visitez notre filière de vente de bois</span>
           </div>
           </a>
-          <a href="https://example.com/sanitaire" target="_blank" rel="noopener noreferrer" className="icon-circle">
+          <a href="https://cogeb-sanitaire.web.app/" target="_blank" rel="noopener noreferrer" className="icon-circle">
           <div className="icon-circle">
             <FaBath className="icon" />
             <span className="tooltip">Visitez notre filière de vente de matériel sanitaire</span>
